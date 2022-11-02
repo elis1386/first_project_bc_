@@ -24,18 +24,9 @@
     </header>
     <section class="main_photo">
       <h1 class="main_text">Download hight resolution images</h1>
-      <form  class="searchBar" id="serch">
-        <input name="s" placeholder="serching here..." type="search" id="serch" />
-        <datalist id="serch">
-          <option value="Food">Food</option>
-          <option value="Animals">Animals</option>
-          <option value="Sport">Sport</option>
-          <option value="Human">Human</option>
-          <option value="Space">Space</option>
-          <option value="Science">Science</option>
-          <option value="Countries">Countries</option>
-        </datalist>
-        <button type="submit"></button>
+      <form action="" method="get" class="searchBar">
+        <input name="search" class="search_input" placeholder="serching here..." type="search" />
+        <button type="submit" class="search_btn"></button>
       </form>
     </section>
     <section class="random_photo">
@@ -170,9 +161,23 @@
         <li>
           <a href=""><i class="fa-brands fa-facebook"></i></a>
         </li>
-        <li><a href=""></a><i class="fa-brands fa-instagram"></i></li>
-        <li><a href=""></a><i class="fa-solid fa-envelope"></i></li>
+        <li><a href="" ></a><i class="fa-brands fa-instagram"></i></li>
+        
+        <li><a href="" id="openModal" onclick="sendMessageModal(); return false"><i class="fa-solid fa-envelope"></i></a></li>
       </ul>
+      <dialog id="dialog">
+        <article class="send_message_dialog">
+              <p>Contact us following form</p>
+              <form action="" class="send_letter_form">
+                <label for="email" class="email_label">Email address</label>
+                <input type="email" class="email" placeholder="name@example.com">
+                <label for="text-area" class="text-area">Write ypur message here</label>
+                <textarea class="message_text"></textarea>
+            <a class="send_message_btn">Send message</a>
+              </form>
+          <a href="" id="clodeModal" class="close_modal" onclick="closeModal(); return false"><i class="fa-solid fa-xmark"></i></a>
+        </article>
+      </dialog>
     </footer>
     <script src="main.js"></script>
   </body>
@@ -180,5 +185,6 @@
 
 
 
-
+  <!--   <i class="fa-regular fa-face-smile-wink"></i>
+          <h1>Thank's for your order!</h -->
 <!-- <i class="fa-regular fa-heart pop-up-cart"></i> -->

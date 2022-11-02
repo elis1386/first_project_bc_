@@ -81,13 +81,17 @@
   top: 45%;
   left: 15%;
 }
-input,
-button {
+datalist{
+  background-color: white;
+  width: 30%;
+}
+.search_input,
+.search_btn {
   border: none;
   outline: none;
   border-radius: 3px;
 }
-input {
+.search_input {
   width: 100%;
   height: 42px;
   background: white;
@@ -218,7 +222,7 @@ button:before {
   background-color: #00a081;
   color: white;
   display: inline-block;
-  margin-left: 43%;
+  margin-left: 45%;
   border-radius: 0.5rem;
   margin-bottom: 2rem;
   margin-top: 1rem;
@@ -294,4 +298,22 @@ button:before {
 .fa-facebook,
 .fa-envelope {
   color: white;
+}
+/* Modal Window */
+
+dialog::backdrop{
+  background: rgba(0,0,0,0.5);
+}
+.send_message_dialog
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+
+}
+.send_letter_form
+{
+  display: flex;
+  flex-direction: column;
 }
