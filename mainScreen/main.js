@@ -11,3 +11,13 @@ function closeModal()
     const closeModal = document.querySelector('#clodeModal')
     closeModal.closeModal()
 }
+function showEmptyCartModal()
+{   
+  let amount = 0
+  if(amount == 0)
+  {
+    const cartDialog = document.querySelector('#cart_dialog')
+    cartDialog.showModal()
+  }
+  
+}

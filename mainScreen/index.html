@@ -19,8 +19,17 @@
       </figure>
       <figure class="cart">
         <i class="fa-solid fa-cart-shopping"></i
-        ><a href="#" class="cart-text">Cart<span>(0)</span></a>
+        ><a href="#" class="cart-text" id="openModal" onclick="showEmptyCartModal(); return false">Cart<span>(0)</span></a>
       </figure>
+      <!-- Cart empty modal -->
+      <dialog id="cart_dialog" class="cart_dialog">
+        <a href="" id="closeModal" class="close_modal" onclick="closeModal(); return false"><i class="fa-solid fa-xmark"></i></a>
+        <article class="your_cart">
+              <h3 class="empty_cart_title">Your cart is empty</h3>
+              <i class="fa-regular fa-face-smile-wink"></i>
+              <p class="empty_cart_text">Let's do some shoping?</p>
+        </article>
+      </dialog>
     </header>
     <section class="main_photo">
       <h1 class="main_text">Download hight resolution images</h1>
@@ -165,17 +174,18 @@
         
         <li><a href="" id="openModal" onclick="sendMessageModal(); return false"><i class="fa-solid fa-envelope"></i></a></li>
       </ul>
+      <!-- Modal -->
       <dialog id="dialog">
+        <a href="" id="closeModal" class="close_modal" onclick="closeModal(); return false"><i class="fa-solid fa-xmark"></i></a>
         <article class="send_message_dialog">
-              <p>Contact us following form</p>
+              <p class="contact">Contact us</p>
               <form action="" class="send_letter_form">
                 <label for="email" class="email_label">Email address</label>
-                <input type="email" class="email" placeholder="name@example.com">
-                <label for="text-area" class="text-area">Write ypur message here</label>
+                <input type="email" class="email">
+                <label for="text-area" class="text-area">Write your message here</label>
                 <textarea class="message_text"></textarea>
             <a class="send_message_btn">Send message</a>
               </form>
-          <a href="" id="clodeModal" class="close_modal" onclick="closeModal(); return false"><i class="fa-solid fa-xmark"></i></a>
         </article>
       </dialog>
     </footer>
@@ -188,3 +198,6 @@
   <!--   <i class="fa-regular fa-face-smile-wink"></i>
           <h1>Thank's for your order!</h -->
 <!-- <i class="fa-regular fa-heart pop-up-cart"></i> -->
+
+
+

@@ -54,6 +54,31 @@
   margin-left: 0.8rem;
   font-size: 1.4rem;
 }
+.cart_dialog {
+  position: fixed;
+  top: -45%;
+  left: 72%;
+  width: 20%;
+  height: 20%;
+  text-align: center;
+}
+.empty_cart_title{
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+
+}
+.empty_cart_text
+{
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+.fa-face-smile-wink
+{
+  font-size: 2rem;
+  margin-bottom: 1rem;
+
+}
 
 /* MAIN SCREEN */
 .main_photo {
@@ -81,7 +106,7 @@
   top: 45%;
   left: 15%;
 }
-datalist{
+datalist {
   background-color: white;
   width: 30%;
 }
@@ -254,8 +279,7 @@ button:before {
   grid-row-start: 1;
   grid-row-end: 6;
 }
-.item--9
-{
+.item--9 {
   grid-column-start: 9;
   grid-column-end: 13;
   grid-row-start: 1;
@@ -301,19 +325,47 @@ button:before {
 }
 /* Modal Window */
 
-dialog::backdrop{
-  background: rgba(0,0,0,0.5);
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.5);
 }
-.send_message_dialog
-{
+.send_message_dialog {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-
 }
-.send_letter_form
-{
+.send_letter_form {
   display: flex;
   flex-direction: column;
+}
+.contact {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.email_label,
+.text-area {
+  margin-bottom: 0.5rem;
+}
+.email {
+  padding: 1rem 3rem;
+  margin-bottom: 1rem;
+}
+.message_text {
+  height: 30px;
+  padding: 1rem 3rem;
+}
+.send_message_btn {
+  border-radius: 1rem;
+  color: #ffffff;
+  background-color: rgb(12, 184, 12);
+  padding: 1rem;
+  width: 60%;
+  display: block;
+  text-align: center;
+  margin: 1rem auto;
+}
+.send_message_btn:hover {
+  border: 1px solid rgb(12, 184, 12);
+  background-color: #ffffff;
+  color: rgb(12, 184, 12);
 }
