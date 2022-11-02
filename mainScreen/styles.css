@@ -246,17 +246,24 @@ button:before {
 }
 .item--8 {
   grid-column-start: 5;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 6;
+}
+.item--9
+{
+  grid-column-start: 9;
   grid-column-end: 13;
   grid-row-start: 1;
   grid-row-end: 6;
 }
-.item--9 {
+.item--10 {
   grid-column-start: 1;
   grid-column-end: 5;
   grid-row-start: 5;
   grid-row-end: 10;
 }
-.item--10 {
+.item--11 {
   grid-column-start: 5;
   grid-column-end: 13;
   grid-row-start: 6;
