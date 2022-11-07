@@ -128,11 +128,14 @@ tr {
 }
 .description {
   width: 50%;
-  margin-top: 2.2rem;
+  margin-top: 5.2rem;
 }
 .description > * {
   margin: 2rem 0 2rem 2rem;
   font-size: 2rem;
+}
+.price{
+  margin-top: 1rem;
 }
 
 .current_photo {
@@ -141,7 +144,7 @@ tr {
 }
 .photo img {
   display: block;
-  width: 100%;
+  width: 80%;
   margin: 1rem auto;
   border-radius: 2rem;
 }
