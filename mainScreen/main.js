@@ -20,6 +20,8 @@ function closeModal()
 
 
 
+
+
 let count = document.querySelector('#count')
 
 function showCartModal()
