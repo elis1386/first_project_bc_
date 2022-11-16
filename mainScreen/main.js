@@ -2,7 +2,7 @@
 /* view more picture button */
 function viewMore() {
   const gallery2 = document.querySelector(".gallery2");
-  gallery2.style.display = "grid";
+  gallery2.style.display = "flex";
 }
 
 /* Show modal windows f */
@@ -17,6 +17,8 @@ function closeModal()
     const closeModal = document.querySelector('#clodeModal')
     closeModal.closeModal()
 }
+
+
 
 
 
@@ -51,4 +53,7 @@ function totalSum()
 {
 
 }
+
+
+
 
