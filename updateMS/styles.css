@@ -176,19 +176,13 @@ button:before {
 .random_photo {
   margin: auto;
 }
-.gallery1 {
-  margin-top: 3rem;
+.gallery{
+  margin: 4rem 0;
   display: flex;
   flex-wrap: wrap;
   width: 100%;
   gap: 1rem;
-  margin-bottom: 1rem;
-}
-.gallery2 {
-  display: none;
-  flex-wrap: wrap;
-  width: 100%;
-  gap: 1rem;
+
 }
 .gallery_text {
   color: black;
@@ -211,7 +205,6 @@ button:before {
 }
 .item {
   position: relative;
-  display: inline-block;
   width: 32%;
 }
 .item:hover .item__img {
@@ -237,12 +230,9 @@ button:before {
   display: flex;
   align-items: center;
 }
-
 .add:hover {
   box-shadow: 0 0 10px #fff;
 }
-
-
 .view_more_btn {
   padding: 1rem 2rem;
   background-color: #00a081;
@@ -260,8 +250,6 @@ button:before {
   border: 1px solid #00a081;
   color: #00a081;
 }
-
-
 /* Footer */
 .footer_bar {
   height: 100px;
