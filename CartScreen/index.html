@@ -50,7 +50,7 @@
         <h5 class="action">Remove all</h5>
       </article>
 
-      <section class="cart-items">
+     <!--  <section class="cart-items">
         <article class="image-box">
           <img
             src="../mainScreen/image/gallery/gallery14.jpeg"
@@ -65,8 +65,8 @@
         <article class="prices">
           <p class="amount">$199</p>
         </article>
-      </section>
-      <section class="cart-items">
+      </section> -->
+     <!--  <section class="cart-items">
         <article class="image-box">
           <img
             src="../mainScreen/image/gallery/gallery13.jpeg"
@@ -81,7 +81,7 @@
         <article class="prices">
           <p class="amount">$199</p>
         </article>
-      </section>
+      </section> -->
       <section class="cart-items">
         <article class="image-box">
           <img
@@ -95,7 +95,7 @@
           <input type="text" placeholder="1" class="quantity" />
         </article>
         <article class="prices">
-          <p class="amount">$199</p>
+          <p class="amount">$100</p>
         </article>
       </section>
 
@@ -103,11 +103,22 @@
       <section class="checkout">
         <article class="total">
           <h3>total</h3>
-          <p class="total-amount">$399</p>
+          <p class="total-amount">$100</p>
         </article>
-        <button class="button">Checkout</button>
+        <button class="button" onclick="showConfirmModal(); return false">Confirm to payment</button>
       </section>
     </section>
+
+    <!-- CONFIRM DIALOG -->
+    <dialog id="confirm">
+      <a href="../mainScreenSoldPhoto/index.html" id="closeModal" class="close_modal" onclick="closeModal();">
+        <i class="fa-solid fa-xmark"></i></a>
+        <article class="confirm_item">
+          <h3 class="confirm_title">Congratulations!</h3>
+          <i class="fa-solid fa-champagne-glasses"></i>
+          <p class="confirm_text">Now you are owner the best picture in the world!</p>
+        </article>
+    </dialog>
 
     <footer class="footer_bar">
       <p class="copy">&copy; All right reserved 2022</p>

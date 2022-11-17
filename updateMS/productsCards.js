@@ -46,6 +46,15 @@ function addEventForAddToCart() {
 function addedProductHandler(event) {
     const productID = event.currentTarget.getAttribute('data-productID');
     console.log(productID)
+    addProduckIntoBasket()
+}
+/**
+ * Функция-добавляет продукты в корзину.
+ */
+
+function addProduckIntoBasket()
+{
+  
 }
 
 insertProductsIntoPage(products, items);
